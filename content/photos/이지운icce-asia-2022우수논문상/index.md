@@ -1,6 +1,6 @@
 ---
 title: "이지운_ICCE Asia 2022_우수논문상"
-date: '2024-01-01'
+date: '2023-01-01'
 summary: "이지운_ICCE Asia 2022_우수논문상"
 tags: []
 image:

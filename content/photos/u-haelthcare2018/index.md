@@ -1,6 +1,6 @@
 ---
 title: "U-Haelthcare2018"
-date: '2024-01-01'
+date: '2020-03-01'
 summary: "U-Haelthcare2018 in Kyoto University발표 석우준"
 tags: []
 image:

@@ -1,6 +1,6 @@
 ---
 title: "Job Fair 2018"
-date: '2024-01-01'
+date: '2020-03-01'
 summary: "SW프로젝트 최종발표평가 우수상 수상"
 tags: []
 image:

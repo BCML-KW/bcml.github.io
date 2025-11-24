@@ -1,6 +1,6 @@
 ---
 title: "2024. BCML 스키캠프"
-date: '2024-01-01'
+date: '2024-04-01'
 summary: "행사 2024. BCML 스키캠프"
 tags: []
 image:

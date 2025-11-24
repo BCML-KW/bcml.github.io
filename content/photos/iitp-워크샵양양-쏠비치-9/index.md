@@ -1,6 +1,6 @@
 ---
 title: "IITP 워크샵_양양 쏠비치"
-date: '2024-01-01'
+date: '2022-05-01'
 summary: "IITP 워크샵_양양 쏠비치"
 tags: []
 image:
