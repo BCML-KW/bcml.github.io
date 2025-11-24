@@ -1,6 +1,14 @@
 {{ $config_dir := "config/_default" }}
 {{ $show_search := site.Params.features.search.provider }}
 {{ $show_logo := site.Params.header.navbar.show_logo | default true }}
+{{/* Prefer Hugo Pipes URLs so GitHub Pages sub-paths still resolve. */}}
+{{ $footerLogo := resources.Get "media/kwangwoon_univ.png" }}
+{{ $footerLogoURL := "" }}
+{{ if $footerLogo }}
+  {{ $footerLogoURL = $footerLogo.RelPermalink }}
+{{ else }}
+  {{ $footerLogoURL = ("media/kwangwoon_univ.png" | relURL) }}
+{{ end }}
 
 <footer class="site-footer">
   {{ $grantParams := site.Params.grants }}
@@ -17,7 +25,7 @@
       <!-- Left side: Kwangwoon University Logo -->
       <div class="footer-left">
         <a href="https://www.kw.ac.kr" target="_blank" rel="noopener">
-          <img src="{{ "https://raw.githubusercontent.com/BCML-KW/bcml.github.io/refs/heads/main/static/media/kwangwoon_univ.png" | relURL }}" alt="Kwangwoon University" class="footer-logo">
+          <img src="{{ $footerLogoURL }}" alt="Kwangwoon University" class="footer-logo">
         </a>
       </div>
       
