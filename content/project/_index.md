@@ -15,7 +15,7 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>Multimodal human-action and sensor fusion models</li>
 	<li>Edge-ready architectures with knowledge distillation</li>
 </ul>
-<p><a href="/project/machine-learning/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/machine-learning/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
 {{< research_area_highlight section="project/reinforcement-learning" title="Reinforcement Learning" >}}
@@ -25,7 +25,7 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>Safe policy search for manipulators and BCIs</li>
 	<li>Simulation-to-real workflows for embedded systems</li>
 </ul>
-<p><a href="/project/reinforcement-learning/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/reinforcement-learning/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
 {{< research_area_highlight section="project/spiking-neural-networks" title="Spiking Neural Networks" >}}
@@ -35,7 +35,7 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>ANN-to-SNN conversion and direct spike training</li>
 	<li>ECG/EEG/PPG analytics with interpretable spikes</li>
 </ul>
-<p><a href="/project/spiking-neural-networks/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/spiking-neural-networks/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
 {{< research_area_highlight section="project/computational-neuroscience" title="Computational Neuroscience" >}}
@@ -45,7 +45,7 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>Remote cognitive assessment and coursework support</li>
 	<li>EEG/ECG biomarkers for fatigue and motor intent</li>
 </ul>
-<p><a href="/project/computational-neuroscience/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/computational-neuroscience/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
 {{< research_area_highlight section="project/digital-healthcare" title="Digital Healthcare" >}}
@@ -55,7 +55,7 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>Privacy-aware patient monitoring and digital therapeutics</li>
 	<li>Wearable signal fusion for cardiometabolic risk tracking</li>
 </ul>
-<p><a href="/project/digital-healthcare/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/digital-healthcare/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
 {{< research_area_highlight section="project/anomaly-detection" title="Anomaly Detection" >}}
@@ -65,6 +65,6 @@ The BCML Lab has covered a wide span of AI-driven healthcare and neuromorphic co
 	<li>Edge-ready monitoring for wearable devices</li>
 	<li>Self-supervised representations for rare-event alerts</li>
 </ul>
-<p><a href="/project/anomaly-detection/" class="btn btn-outline-primary btn-sm">Explore projects</a></p>
+<p><a href='{{< relref "/project/anomaly-detection/" >}}' class="btn btn-outline-primary btn-sm">Explore projects</a></p>
 {{< /research_area_highlight >}}
 
