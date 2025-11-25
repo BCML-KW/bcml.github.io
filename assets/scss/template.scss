@@ -712,7 +712,16 @@ img {
   }
 }
 
-@media (max-width: 992px) {
+@media (min-width: 1201px) {
+  .navbar .navbar-collapse {
+    display: flex !important;
+  }
+  .navbar .navbar-toggler {
+    display: none !important;
+  }
+}
+
+@media (max-width: 1200px) {
   .navbar .container,
   .navbar .container-fluid,
   .navbar .container-lg,
@@ -728,12 +737,13 @@ img {
     justify-content: center;
   }
 
-  .navbar-toggler {
+  .navbar .navbar-toggler {
     order: 1;
     margin-right: auto;
+    display: inline-flex !important;
   }
 
-  .navbar-collapse {
+  .navbar .navbar-collapse {
     order: 3;
     width: 100%;
     background: rgba(6, 10, 20, 0.95);
@@ -743,6 +753,7 @@ img {
     margin-top: 0.75rem;
     box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
     transition: height 0.2s ease, opacity 0.2s ease;
+    display: none !important;
   }
 
   .navbar-nav {
@@ -783,11 +794,9 @@ img {
     color: $bcml-color-text !important;
   }
 
-  .navbar-collapse.collapsing {
-    opacity: 0;
-  }
-
-  .navbar-collapse.collapse.show {
+  .navbar .navbar-collapse.collapsing,
+  .navbar .navbar-collapse.collapse.show {
+    display: block !important;
     opacity: 1;
   }
 }
@@ -975,8 +984,7 @@ canvas#neuralNetwork {
   border: none;
   background: transparent;
   position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 !important;
 }
 
 .home-section.latest-publications-gif .home-section-bg {
@@ -994,6 +1002,8 @@ canvas#neuralNetwork {
   background: rgba(3, 6, 14, 0.72);
   backdrop-filter: blur(8px);
   padding: 2.5rem;
+  width: 100%;
+  max-width: none;
 }
 
 .home-section.latest-publications-gif .section-heading h1,
@@ -1668,4 +1678,3 @@ canvas#neuralNetwork {
     transform: none !important;
   }
 }
-
