@@ -21,9 +21,12 @@ organizations:
 bio: Undergraduate research intern at BCML Lab.
 
 interests:
-  - Machine Learning
-  - Deep Learning
-  - Signal Processing
+  - Computer Vision 
+  - Medical AI & Healthcare
+  - Deep Learning 
+  - Synthetic Data Generation 
+  - Human Pose Analysis
+  - DVS-RGB Fusion
 
 education:
   courses:
@@ -48,4 +51,4 @@ user_groups:
   - Interns
 ---
 
-Hyeonwoo Kim is currently an undergraduate research intern at BCML Lab, Kwangwoon University.
+Hyeonwoo Kim is currently a senior undergraduate student in the Department of Computer Engineering at Kwangwoon University, Seoul, South Korea. His research interests include Computer Vision, Deep Learning, and AI for Healthcare. Recently, he has been focusing on Human Activity Recognition (HAR) systems that prioritize privacy protection. He is also conducting research on improving model performance in data-sparse environments through data augmentation and utilizing synthetic data generated from simulations to address real-world data limitations.
