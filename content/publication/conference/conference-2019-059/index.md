@@ -2,10 +2,10 @@
 title: 동작상상 태스크 수행 분류를 위한 강화학습기반 최적의 주성분 추출
 authors:
 - taeheum-cho
-- 석우준
+- woojoon-seok
 - cheolsoo-park
-date: '2024-11-30T00:00:00Z'
-publishDate: '2024-11-30T00:00:00Z'
+date: '2019-05-30T00:00:00Z'
+publishDate: '2019-05-30T00:00:00Z'
 publication_types:
 - paper-conference
 publication: 대한의용생체공학회 춘계학술대회, 여수, 2019.05

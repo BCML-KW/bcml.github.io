@@ -9,8 +9,8 @@ authors:
 - S. A. Hillyard
 - T. Coleman
 - H. Poizner
-date: '2017-12-03T00:00:00Z'
-publishDate: '2017-12-03T00:00:00Z'
+date: '2012-01-01T00:00:00Z'
+publishDate: '2012-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: SfN 2012, New Orleans, USA, 2012
@@ -25,11 +25,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

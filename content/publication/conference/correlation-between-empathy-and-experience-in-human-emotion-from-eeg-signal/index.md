@@ -5,8 +5,8 @@ authors:
 - B.S Hwang
 - youngjoo-kim
 - cheolsoo-park
-date: '2018-02-26T00:00:00Z'
-publishDate: '2018-02-26T00:00:00Z'
+date: '2017-01-01T00:00:00Z'
+publishDate: '2017-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: U-healthcare, Seoul, Korea, 2017
@@ -21,11 +21,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

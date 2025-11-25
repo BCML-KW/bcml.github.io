@@ -6,8 +6,8 @@ authors:
 - Y. Koo
 - cheolsoo-park
 - et al.
-date: '2021-01-08T00:00:00Z'
-publishDate: '2021-01-08T00:00:00Z'
+date: '2016-01-01T00:00:00Z'
+publishDate: '2016-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IBEC (International Biomedical Engineering Conference), Seoul, Korea,
@@ -43,11 +43,4 @@ abstract: "AbstractAccurate and low-cost sleep measurement tools are needed in b
   \ Random forest models have been made open-source to aid further research. In line\
   \ with literature, sleep stage classification turned out to be difficult using only\
   \ accelerometer data."
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

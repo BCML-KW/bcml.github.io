@@ -111,15 +111,10 @@ sections:
           });
         })();
         </script>
-        <div style="position: relative; z-index: 1;">
-        <br>
-        <div style="font-size: 1.1rem; line-height: 1.7;">
-        At BCML, we explore the intersection of biology, computation, and machine learning. 
-        <br><br>
-        Our research focuses on Spiking Neural Networks, Reinforcement Learning, and Medical AI to advance computational neuroscience and healthcare innovation.
-        </div>
-        <br>
-        Department of Computer Engineering, Kwangwoon University, Seoul, South Korea
+        <div class="hero-copy">
+          <p>At BCML, we explore the intersection of biology, computation, and machine learning to push computational neuroscience forward.</p>
+          <p>Our research focuses on Spiking Neural Networks, Reinforcement Learning, and Medical AI to advance healthcare innovation.</p>
+          <p class="hero-location">Department of Computer Engineering, Kwangwoon University, Seoul, South Korea</p>
         </div>
   
   - block: collection
@@ -141,26 +136,6 @@ sections:
       view: showcase
       columns: '1'
   
-  - block: markdown
-    content:
-      title:
-      subtitle: ''
-      text:
-    design:
-      columns: '1'
-      background:
-        image: 
-          filename: featured.jpg
-          filters:
-            brightness: 1
-          parallax: false
-          position: center
-          size: contain
-          text_color_light: true
-      spacing:
-        padding: ['20px', '0', '20px', '0']
-      css_class: fullscreen
-
   - block: collection
     content:
       title: Latest Publications
@@ -173,6 +148,7 @@ sections:
     design:
       view: citation
       columns: '1'
+      css_class: latest-publications-gif
 
   - block: markdown
     content:
@@ -182,4 +158,5 @@ sections:
         {{% cta cta_link="./people/" cta_text="Meet the team →" %}}
     design:
       columns: '1'
+      css_class: bcml-gif-section
 ---

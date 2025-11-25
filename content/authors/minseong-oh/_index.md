@@ -48,4 +48,4 @@ user_groups:
   - Interns
 ---
 
-Minseong Oh is currently an undergraduate research intern at BCML Lab, Kwangwoon University.
+Minseong Oh is a junior in the School of Information Convergence at Kwangwoon University in Seoul, South Korea. His research interests include Spiking Neural Networks (SNN) and Neuroscience.

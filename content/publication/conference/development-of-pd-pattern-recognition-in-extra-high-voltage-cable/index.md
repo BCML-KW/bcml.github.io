@@ -4,8 +4,8 @@ authors:
 - cheolsoo-park
 - C. S. Kim
 - J. Y. Kim
-date: '2024-05-24T00:00:00Z'
-publishDate: '2024-05-24T00:00:00Z'
+date: '2007-06-01T00:00:00Z'
+publishDate: '2007-06-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: High Voltage and Discharge Application Technologies Research Association
@@ -22,11 +22,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

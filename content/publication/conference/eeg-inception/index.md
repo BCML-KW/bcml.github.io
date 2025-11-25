@@ -6,8 +6,8 @@ authors:
 - 이영준
 - 이호찬
 - cheolsoo-park
-date: '2019-06-01T00:00:00Z'
-publishDate: '2019-06-01T00:00:00Z'
+date: '2021-06-01T00:00:00Z'
+publishDate: '2021-06-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IEIE 2021, June 2021, Jeju
@@ -22,11 +22,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

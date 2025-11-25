@@ -3,8 +3,8 @@ title: 연합 학습 모델에서 비정상 클라이언트 클러스터링
 authors:
 - jihwan-won
 - cheolsoo-park
-date: '2019-11-30T00:00:00Z'
-publishDate: '2019-11-30T00:00:00Z'
+date: '2022-07-01T00:00:00Z'
+publishDate: '2022-07-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IEIE 2022, Jul 2022, Jeju
@@ -19,11 +19,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

@@ -6,8 +6,8 @@ authors:
 - seungwoo-han
 - Kwangsuk Park
 - cheolsoo-park
-date: '2022-12-19T00:00:00Z'
-publishDate: '2022-12-19T00:00:00Z'
+date: '2019-12-01T00:00:00Z'
+publishDate: '2019-12-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: u-Healthcare 2019, Dec 2019, Kookmin University
@@ -34,11 +34,4 @@ abstract: "Abstract\n        Recently, several studies have proposed methods for
   \ extensive experiments, we found a significant performance difference depending\
   \ on the location of the PPG measurement in the BP estimation system using finger\
   \ pressure."
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

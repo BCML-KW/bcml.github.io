@@ -22,29 +22,21 @@
   <div class="footer-border"></div>
   <div class="container">
     <div class="footer-content">
-      <!-- Left side: Kwangwoon University Logo -->
       <div class="footer-left">
-        <a href="https://www.kw.ac.kr" target="_blank" rel="noopener">
+        <a class="footer-logo-link" href="https://www.kw.ac.kr" target="_blank" rel="noopener">
+          <span class="footer-logo-glow" aria-hidden="true"></span>
           <img src="{{ $footerLogoURL }}" alt="Kwangwoon University" class="footer-logo">
         </a>
       </div>
-      
-      <!-- Right side: Copyright and Address -->
-      <div class="footer-right">
-        {{ with site.Params.footer.copyright }}
-          <p class="footer-copyright">
-            {{- if not .notice -}}
-              © {{ now.Format "2006" }} {{ site.Title | markdownify}}
-            {{- else -}}
-              {{ replace (replace .notice "{year}" now.Year) "{license}" (site.Params.footer.copyright.license.text | default "CC BY-SA 4.0") | markdownify}}
-            {{- end -}}
-            <span style="margin: 0 8px;">|</span>
-            <a href="{{ "/terms/" | relLangURL }}" style="color: #8A1601; text-decoration: none;">Terms & Privacy</a>
-            <span style="margin: 0 8px;">|</span>
-            <a href="https://github.com/BCML-KW" target="_blank" rel="noopener" style="color: #8A1601; text-decoration: none;">GitHub</a>
-          </p>
-        {{ end }}
-        
+
+      <div class="footer-info">
+        <p class="footer-meta">
+          © {{ now.Format "2006" }} BCML Lab, Kwangwoon University. All rights reserved.
+          <span class="footer-divider" aria-hidden="true">|</span>
+          <a href="{{ "/terms/" | relLangURL }}">Terms &amp; Privacy</a>
+          <span class="footer-divider" aria-hidden="true">|</span>
+          <a href="https://github.com/BCML-KW" target="_blank" rel="noopener">GitHub</a>
+        </p>
         <p class="footer-address">
           Rm 701, Saebit Bldg., 20, Gwangun-ro, Nowon-gu, Seoul 01890, South Korea
         </p>
@@ -52,3 +44,179 @@
     </div>
   </div>
 </footer>
+
+<script>
+  (function () {
+    const selectors = ['.home-section', '.view-showcase', '.grant-highlight', '.research-area-highlight', '.article-container'];
+    const nodes = [];
+
+    selectors.forEach((selector, selectorIndex) => {
+      document.querySelectorAll(selector).forEach((el, elIndex) => {
+        if (!nodes.includes(el)) {
+          el.classList.add('bcml-animate-ready');
+          const delay = Math.min((selectorIndex * 150) + (elIndex * 60), 600);
+          el.style.setProperty('--bcml-animate-delay', `${delay}ms`);
+          nodes.push(el);
+        }
+      });
+    });
+
+    if (!nodes.length) {
+      return;
+    }
+
+    if (!('IntersectionObserver' in window)) {
+      nodes.forEach((el) => el.classList.add('bcml-animate-in'));
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('bcml-animate-in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.2,
+    });
+
+    nodes.forEach((el) => observer.observe(el));
+  })();
+</script>
+
+<script>
+  (function () {
+    const MIN_WIDTH = 960;
+    const MIN_RATIO = 1.2;
+    const MAX_IMAGES = 12;
+    const FADE_MS = 320;
+    const CYCLE_MS = 6500;
+
+    function onReady(callback) {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', callback, { once: true });
+      } else {
+        callback();
+      }
+    }
+
+    async function fetchHeroCandidates() {
+      try {
+        const response = await fetch('/photos/');
+        if (!response.ok) {
+          return [];
+        }
+
+        const html = await response.text();
+        const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const banners = Array.from(doc.querySelectorAll('img.article-banner'));
+
+        if (!banners.length) {
+          return [];
+        }
+
+        const filtered = banners
+          .map((img) => ({
+            src: img.getAttribute('src') || '',
+            alt: img.getAttribute('alt') || 'BCML Lab photo',
+            width: parseInt(img.getAttribute('width') || '0', 10),
+            height: parseInt(img.getAttribute('height') || '0', 10),
+          }))
+          .filter((img) => img.src.startsWith('/'))
+          .filter((img) => img.width >= MIN_WIDTH)
+          .filter((img) => img.width >= img.height)
+          .filter((img) => {
+            const ratio = img.width / Math.max(img.height, 1);
+            return ratio >= Math.max(MIN_RATIO, 1.4);
+          });
+
+        if (filtered.length) {
+          return filtered;
+        }
+
+        return banners.map((img) => ({
+          src: img.getAttribute('src') || '',
+          alt: img.getAttribute('alt') || 'BCML Lab photo',
+        }));
+      } catch (error) {
+        console.warn('BCML hero rotator fetch failed', error);
+        return [];
+      }
+    }
+
+    function uniqueBySrc(images) {
+      const seen = new Set();
+      const unique = [];
+      images.forEach((img) => {
+        if (!img.src || seen.has(img.src)) {
+          return;
+        }
+        seen.add(img.src);
+        unique.push(img);
+      });
+      return unique;
+    }
+
+    function preloadImages(images) {
+      images.forEach((img) => {
+        if (!img.src) {
+          return;
+        }
+        const preloader = new Image();
+        preloader.src = img.src;
+      });
+    }
+
+    async function initHeroRotator() {
+      const heroSection = document.querySelector('.home-section.wg-hero');
+      const heroBg = heroSection?.querySelector('.home-section-bg');
+      if (!heroSection || !heroBg || heroSection.dataset.heroRotator === 'ready') {
+        return;
+      }
+
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        return;
+      }
+
+      const original = {
+        src: '/media/hero/welcome.jpg',
+      };
+
+      const gallery = await fetchHeroCandidates();
+      if (!gallery.length) {
+        return;
+      }
+
+      const heroImages = uniqueBySrc([original, ...gallery]).slice(0, MAX_IMAGES);
+      if (heroImages.length < 2) {
+        return;
+      }
+
+      heroSection.dataset.heroRotator = 'ready';
+      preloadImages(heroImages);
+
+      let currentIndex = 0;
+
+      function swapImage() {
+        currentIndex = (currentIndex + 1) % heroImages.length;
+        const next = heroImages[currentIndex];
+        if (!next || !next.src) {
+          return;
+        }
+
+        heroBg.classList.add('bcml-hero-bg-fade');
+        setTimeout(() => {
+          document.documentElement.style.setProperty('--bcml-hero-image', `url('${next.src}')`);
+          heroBg.classList.remove('bcml-hero-bg-fade');
+        }, FADE_MS);
+      }
+
+      setInterval(swapImage, CYCLE_MS);
+    }
+
+    onReady(initHeroRotator);
+  })();
+</script>

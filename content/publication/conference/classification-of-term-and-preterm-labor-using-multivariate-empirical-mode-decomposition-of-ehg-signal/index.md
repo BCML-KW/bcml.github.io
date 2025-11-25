@@ -5,8 +5,8 @@ authors:
 - jiwoo-ryu
 - youngjoo-kim
 - cheolsoo-park
-date: '2022-12-01T00:00:00Z'
-publishDate: '2022-12-01T00:00:00Z'
+date: '2014-01-01T00:00:00Z'
+publishDate: '2014-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IBEC 2014, Gwangju, Korea, 2014
@@ -21,11 +21,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

@@ -3,8 +3,8 @@ title: 심층 스파이킹 신경망 에서의 이미지 분류를 위한 지도
 authors:
 - geunbo-yang
 - cheolsoo-park
-date: '2022-04-30T00:00:00Z'
-publishDate: '2022-04-30T00:00:00Z'
+date: '2023-05-01T00:00:00Z'
+publishDate: '2023-05-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: May 2023, Daegu
@@ -19,11 +19,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

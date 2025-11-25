@@ -5,8 +5,8 @@ authors:
 - youngjoo-kim
 - jiwoo-ryu
 - cheolsoo-park
-date: '2016-01-01T00:00:00Z'
-publishDate: '2016-01-01T00:00:00Z'
+date: '2014-01-01T00:00:00Z'
+publishDate: '2014-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IBEC 2014, Gwangju, Korea, 2014
@@ -37,11 +37,4 @@ abstract: Recent studies have demonstrated the disassociation between the mu and
   nonlinear and nonstationary EEG signals compared to the conventional IIR filtering.
   Finally, the random forest classifier yielded a high performance for the classification
   of the motor imagery tasks.
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

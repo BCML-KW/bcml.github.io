@@ -5,8 +5,8 @@ authors:
 - youngjoo-kim
 - cheolsoo-park
 - et al.
-date: '2012-11-01T00:00:00Z'
-publishDate: '2012-11-01T00:00:00Z'
+date: '2016-01-01T00:00:00Z'
+publishDate: '2016-01-01T00:00:00Z'
 publication_types:
 - paper-conference
 publication: IBEC (International Biomedical Engineering Conference), Seoul, Korea,
@@ -22,11 +22,4 @@ url_slides: ''
 url_source: ''
 url_video: ''
 abstract: ''
-##url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_poster: ''
-#url_project: ''
-#url_slides: ''
-#url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-#url_video: 'https://youtube.com'
 ---

@@ -7,8 +7,8 @@ authors:
 - 이 진
 - 임영범
 - cheolsoo-park
-date: '2024-09-30T00:00:00Z'
-publishDate: '2024-09-30T00:00:00Z'
+date: '2017-09-30T00:00:00Z'
+publishDate: '2017-09-30T00:00:00Z'
 publication_types:
 - paper-conference
 publication: KOSOMBE (Korea Society of Medical & Biological Engineering), Jeonju,
