@@ -3,11 +3,9 @@ title: Jiwoo Ryu
 first_name: Jiwoo
 last_name: Ryu
 superuser: false
-role: PhD Student, University of Groningen
+role: Embedded Software Engineer, Fugro Innovation & Technology B.V.
 organizations:
-- name: Johann Bernoulli Institute for Mathematics and Computer Science, University
-    of Groningen
-  url: https://www.rug.nl/
+- name: Fugro Innovation & Technology B.V.
 bio: His research interests include image processing and biomedical signal processing.
 interests:
 - Image Processing
@@ -16,7 +14,7 @@ interests:
 - Signal Analysis
 education:
   courses:
-  - course: PhD in Computer Science (Current)
+  - course: PhD in Computer Science
     institution: University of Groningen, Netherlands
     year: null
   - course: MEng in Computer Engineering
@@ -37,7 +35,7 @@ highlight_name: true
 user_groups:
 - Alumni
 ---
-Jiwoo You is currently a PhD student at the Johann Bernoulli Institute for Mathematics and Computer Science (JBI) of University of Groningen (RUG), Netherlands. He is currently jointly working with the Kapteyn Astronomical Institute.
+Jiwoo Ryu completed his PhD at the Johann Bernoulli Institute for Mathematics and Computer Science (JBI) of University of Groningen (RUG), Netherlands, and is now an Embedded Software Engineer at Fugro Innovation & Technology B.V.
 
 He received his B.Eng. and M.Eng. degree in computer engineering from Kwangwoon University in Seoul, Republic of Korea, in 2011 and 2015, respectively. His research interests include image processing and biomedical signal processing.
 
